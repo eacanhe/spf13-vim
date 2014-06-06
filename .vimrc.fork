@@ -2,7 +2,7 @@
 
     " taglist {
         nnoremap <F3> :TlistToggle<CR>
-        let Tlist_Auto_Open=1
+        "let Tlist_Auto_Open=1
         let Tlist_Exit_OnlyWindow=1
         let Tlist_Show_One_File=1
         let Tlist_GainFocus_On_ToggleOpen=1
@@ -12,6 +12,17 @@
     " }
 
     " Cscope "
-        
     " }
+
+    " neocomplcache
+        " Disable auto complete, use <c-x><c-u> to manual active complete.
+        let g:neocomplcache_disable_auto_complete=1
+    " }
+" }
+
+" General {
+    set colorcolumn=80
+    ""autocmd BufRead,BufNewFile *.c,*.h,*.cc,*.cpp setf cpp
+    au FileType cpp ru ftplugin/cpp.vim
+
 " }

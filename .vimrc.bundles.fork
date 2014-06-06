@@ -1,2 +1,3 @@
 Bundle 'vim-scripts/autoload_cscope.vim'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'vim-scripts/headerguard'
